@@ -85,7 +85,7 @@ var Sparkle = function() {
 		img.src = settings.image;
     image.appendChild(img);
 
-		$(cssSelector).append(image, document.body.lastChild);
+		$(cssSelector).append(image);
 
 		images.push(image);
 	};

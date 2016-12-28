@@ -145,7 +145,7 @@ gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
 
-gulp.task('deploy', ['default'], () => {
+gulp.task('deploy', ['build'], () => {
   return gulp.src('dist/**/*')
     .pipe($.ghPages());
 });

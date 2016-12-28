@@ -20,9 +20,6 @@ let app = new Vue({
     },
     onSlideIn: function ($slide) {
       $slide.addClass('active');
-    },
-    message: function (messageKey) {
-      return this.$t(messageKey);
     }
   },
   mounted: function()  {
